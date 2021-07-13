@@ -107,7 +107,7 @@ int main()
     case 4:
       is_empty();
       break;
-    case5:
+    case 5:
       exit(1);
     default:
       printf("\nInvalid Choice!!\n");
