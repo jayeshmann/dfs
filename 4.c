@@ -34,21 +34,21 @@ void printPoly(int poly[], int n)
 
 int main()
 {
-  int A[] = {5, 0, 10, 6};
+  int A[] = {3, 0, 10, 6};
 
-  int B[] = {1, 2, 4};
+  int B[] = {4, 1, 2, 4};
   int m = sizeof(A) / sizeof(A[0]);
   int n = sizeof(B) / sizeof(B[0]);
 
-  printf("First polynomial is \n");
+  printf("First polynomial is: \n");
   printPoly(A, m);
-  printf("\nSecond polynomial is \n");
+  printf("\nSecond polynomial is: \n");
   printPoly(B, n);
 
   int *sum = add(A, B, m, n);
   int size = max(m, n);
 
-  printf("\nsum polynomial is \n");
+  printf("\nSum is: \n");
   printPoly(sum, size);
   printf("\n");
 
