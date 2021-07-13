@@ -43,12 +43,16 @@ void dequeue()
   free(temp);
 }
 
-int pfront()
+void traverseForward(struct Node *node)
 {
-  int a;
-  a = front->data;
-
-  return (a);
+  struct Node *last;
+  while (node != NULL)
+  {
+    printf(" %d ", node->data);
+    last = node;
+    node = node->next;
+  }
+  printf("\n");
 }
 
 int main()
@@ -57,13 +61,17 @@ int main()
   rear = NULL;
 
   enqueue(2);
-  printf("\nfront - %d ", pfront());
+  printf("\nenqueue 2: ");
+  traverseForward(front);
   enqueue(3);
-  printf("\nfront - %d ", pfront());
+  printf("\nenqueue 3: ");
+  traverseForward(front);
   enqueue(5);
-  printf("\nfront - %d ", pfront());
+  printf("\nenqueue 5: ");
+  traverseForward(front);
   dequeue();
   dequeue();
-  printf("\nfront - %d ", pfront());
+  printf("\nqueue after 2 dequeue: ");
+  traverseForward(front);
   printf("\n");
 }
