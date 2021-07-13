@@ -197,7 +197,7 @@ void main()
   printf("How many numbers do you want to add?: ");
   scanf("%d", &n);
 
-  printf("Enter %d numbers (seperated by ENTER): \n", n);
+  printf("Enter %d numbers (separated by ENTER): \n", n);
   for (int i = 0; i < n; i++)
   {
     printf("%d. ", i + 1);
