@@ -13,6 +13,7 @@ int main()
   scanf("%d", &b);
 
   printf("GCD: %d", gcd(a, b));
+  printf("\n");
   return 0;
 }
 
